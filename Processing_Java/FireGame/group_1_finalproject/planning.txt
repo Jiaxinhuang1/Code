@@ -1,0 +1,16 @@
+UI start menu screen (click buttons), pause and end screen
+character animation
+characters controls(space, down, left, right)
+set up like fire boy
+character class
+1. try to get to the exit without dying
+2. dodge traps
+3. solve the puzzle
+
+water is instant death
+fire slowly dies, needs to collect fire particles to stay alive 
+health system
+
+Jiaxin - menus/character
+Iris - health system
+Corey - level, enemies

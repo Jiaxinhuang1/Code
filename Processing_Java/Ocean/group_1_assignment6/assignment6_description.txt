@@ -1,0 +1,23 @@
+Intended Animation: An ocean environment with the objects within the ocean looping indefinitely. We will include forces such as velocity, acceleration, gravity, spring forces, and more to influence the position of our objects. Inside the ocean, there will be a particle system of bubbles which can be controlled by the player mouse movement, a crab jumping, multiple fish objects moving in different speeds based on the mass, and a buoy and fishing rod floating on top of the ocean.
+
+Purpose of classes:
+Bubble - This class takes in float x, y, vx, vy, and r and the color c as parameters to control the position, velocity, radius, and color of the bubble respectively. It contains four functions: the applyForces() takes in float fx and fy to control the position of the bubble based on the force applied as well as acceleration towards mouse position and gradually making it transparent. The display() draws the bubble as two ellipses. The disappear() decreases the radius to make the bubble gradually disaapear when popped. The isAlive() returns a boolean to check if the bubbles is visible in screen or ocean.
+
+BubbleSystem - This class takes in float x and y to control the position of the group of bubbles. It contains two classes: the createBubbles() adds the bubble object from the previous class into an arraylist of bubbles with random velocity and radius. The moveBubbles() displays and applies forces to each bubble in the arraylist and make them disappear when mouse is clicked.
+
+
+---------------------------------------------------------------------------
+Challenges:
+1. Jiaxin's Challenges: The most difficult problem I had was trying to control the acceleration and velocity of the bubbles so that it can move towards the mouse position when the mouse is within the ocean and default the movement when the mouse is outside the ocean. I had to play around with my variables and do multiple reasearch online to get it to finally work. Another situation I faced was removing the bubbles from the screen. I could not find a simple way to do it based on arrays so I had to change my particle system to arraylist instead. My last challenge was to create the water plants using bezier curve and controlling its anchors with a variable. 
+
+2. Iris's Challenges: One of the biggest challenges was trying to figure out how to create a seahorse shape out of primitive shapes. I knew that I wanted it to be detailed enough that it is easily identified as a seahorse, but didn't want to have to put in too much detail where I would get overwhelmed. I think using multiple colors really helped create definition in the shape. I also created more classes because I was experimenting with how to create the different things that I used and decided not to go through and edit all my code once I finished. 
+
+3. Corey's Challenges: The biggest challenge I had was making the movement of the creatures look natural. I wanted the fish to swim naturally and the crab to jump up and down from the floor naturally as well.
+
+---------------------------------------------------------------------------
+Team Members Contributions:
+Jiaxin Huang - This member created the Bubble and the BubbleSystem class which displays and moves the bubbles particle system while adjusting the position based on forces such as velocity, gravity, and acceleration (also controled by player input). She also set the coding format for the team by creating the group_1_assigment6 processing file that draws the sky, ocean, and ground as well as moving water plants.To put all her classes to work, this member added her portion of the project into the main program by creating two BubbleSystem objects in different positions on screen with the movements controled within that class.
+
+Iris Shea - This member create the Rod, Buoy, Seahorse, and Seahorse2 classes. Each class depicted a different item; buoy, rod, or seahorses. Each item that was created moved in a different way, whether with it's speed or direction. The seahorse classes in particular are both moving freely and using spring forces to jump back and forth much like a real life seahorse would. She also added her portion of the project into the main program. 
+
+Corey Zhang - This member created the Crab and Fih classes. Each of the repective classes depicts a different drawing. Additionally there is movement in each class that corresponds with the creature. The crab jumps up and down from the sea floor and the fish swim in a manner similiar to real life. They both use forces to dictate their movement. This member also added code to the main portion of the project by adding to group_1_assignment_6. 

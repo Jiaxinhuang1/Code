@@ -1,0 +1,36 @@
+Intended Animation: A looping water cycle depicting Evaporation, Condensation, Precipitation, and Runoff.
+
+Purpose of classes:
+Precipitation - Superclass that contains the main constructors and controls the sizeTransform function which increases/decreases size of the clouds and the fall function which makes the rain fall.
+
+Cloud - subclass of Precipitation that displays the clouds in a PShape group of ellipses and a sizeTransform function that was duplicated from the Precipitation superclass (since it was not working over there).
+
+Rain - subclass of Precipitation that shows the rainfall as lines of different strokeWeight. This is called in an array of 100 raindrops to show it pouring from the clouds at random positions and speeds.
+
+Sun - class that displays the sun as a PShape group of ellipses and rectangles which uses the matrix for different transformations including translate (to top right), rotate (in angle radians), and scale (up and down). It also contains the update function that increments on the angle of rotation and the speed of scaling to portray motion.
+
+Arrows - subclass of evaporation that will draw arrows, move the arrows, and change opacity as they go up to simulate them turning from water to vapor.
+
+Evaporation - superclass that gets x coord, y coord, and speed of the evaporation.
+
+Lake - class that displays a body of water on the right side of the screen. This body of water also moves up and down to show that there is water that is being evaporated from it.
+
+Fish - subclass of RunOff that creates a PShape group with ellipses and triangles to create a fish shape. Uses a display and custom swim function to create the Pshape on screen and create the animation to move the fish in the water, across the screen.
+
+RunOff - Superclass that creates the ground, body of water, water collection animation (growing and shrinking ellipse), and water droplet animation (transforming ellipse).
+
+---------------------------------------------------------------------------
+Challenges:
+1. Jiaxin's Challenges: I did not know that we had to use PShapes and translate, rotate, scale functions initially when I had already finished my portion, so I had to stay in office hours with Marco for more than an hour trying to change/debug my code into those groups (Thank you Marco for your great help by the way!). Trying to find a way to connect all the superclass and subclasses together was also a challenge. At end I pretty much got what I initially planned in the progress report completed.
+
+2. Iris's Challenges: Because we had limited space for the ground, it was pretty difficult deciding what the height would be and how big I should make the fish. Creating the fish using different PShapes also came with some difficulties. Since I am still kind of unfamiliar with using TRIANGLE and plotting all three points, I had to do lots of sketch work to try to get it done. When experimenting with sound, it was a little difficult implementing it since the sound was originally very "crunchy". It was a while till I recognized that fixing the amp would solve the issue. 
+
+3. Corey's Challenges:It was a bit difficult to find a way to make the shapes, namely the arrows, dissapear gradually as they went up as there was no function that I knew about that would do that. Ultimately I did not face that many difficulties with my portion of the project.
+
+---------------------------------------------------------------------------
+Team Members Contributions:
+Jiaxin Huang - This member created the Precipitation, Rain, Sun, and Cloud classes which controls the display and constant scaling of the clouds, the rain falling from the clouds in random strokeWeights, and the rotating/scaling of the sun in the top right corner of the sketch. To put all the classes to work, this member added her portion of the project into the main group_1_assignment4 processing file by creating different objects and transforming those objects based on the functions created using those classes.
+
+Iris Shea - This member created the RunOff and Fish classes which created the ground, the animation with the water collecting, the animation with the fish moving back and forth, and the animation with the water traveling back into the body of water. This member also contributed by creating and adding her portion of the project into the main group_1_assignment4 processing file. This member also implemented the background music that accompanied the animation. 
+
+Corey Zhang - This memeber created the Evaporation, Arrows, and Lake class which encompasses all the parts of evaporation. The water in the lake builds up and then is turned into vapor. This member also contributed to the group_1_assignment by inserting the classes into that and creating different objects in the scene.

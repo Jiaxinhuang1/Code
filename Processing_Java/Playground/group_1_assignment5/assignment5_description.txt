@@ -1,0 +1,30 @@
+Intended Animation: A looping playground where there are animating swings, roundabouts, and balls/children.
+
+Purpose of classes:
+Stand - This class takes in floats x, y, and z as parameters to control the position of the swing stand (the part of the swing that is not moving). It uses four PShape boxes to create the look of the stand. This class contains one function displayStand() which creates/displays a PShape group of three boxes.
+
+Swing - This class takes in originX, originY, jointX, jointY, angle, aVel, and aAcc floats as parameters to control the position and movement of the swing chain and seat. It contains three functions: the displaySwing() function creates a PShape group of two chains twice (four chains) as lines. The move() function controls the movement of the chains side to side by using the sine and cosine functions with incremental angle controlled by changing velocity and acceleration. The moveSeat() function creates and moves a box based on the bottom of the chains movement.
+
+Roundabout - This class takes in x, y, and z for position of the roundabout followed by the size of the roundabout thats make, followed by the speed and direction of the spin, and finally the colors that make up the roundabout.
+It has a function displayRoundabout() to display the whole thing after all the inputs are in.
+Additionally theres a function spin() which will update the angle of the body based on the speed entered.
+
+Ball - This class takes in x, y, z, color, start position and end position. It has two functions: display() which creates the primitive sphere and move() which checks where the ball is at all times and moves back and forth between the start and end positions. 
+
+Children - This class takes in x, y, color, start position, and end position. It has displayChildren() and display(). DisplayChildren() both creates the child group with all the different Pshapes and also creates the movement of the child that is kicking the ball. Display() only creates a static child which the ball bounces off of and then returns. 
+
+---------------------------------------------------------------------------
+Challenges:
+1. Jiaxin's Challenges: The most difficult challenge I had was trying to get the chains and the seats move at the same speed and angle so it looks like they are connected. I had to do a bunch of research on pendulums and play around with my parameters and rotate/translate functions to get it to finally work. Making the objects display in the screen was also difficult in 3D space especially when the position of the 3D objects are controled by the translate and rotate functions rather than the parameters of the shape creation. Finding the camera angle/position that diplays the entire playground was a huge pain as well. Overall, I managed to get through the challenges.
+
+2. Iris's Challenges: I tried many times to import an .obj file for the children, but I kept getting an error about another file and found solutions online that I didn't really understand. So I had to forfit the challenge to import. Another challenge that I had was trying to find a way to rotate just the leg of the child group Pshape. I ended up just using a movement since the rotate wouldn't appear or rotate correctly. 
+
+3. Corey's Challenges: A challenge I had was drawing the whole thing and making it show up. Initially I struggled to even show the roundabout while rotating it to be flat on the ground. Additionally it was difficult to make the drawings after rotating it among the x axis. Another challenge I faced was that it was difficult to make the roundabout object handles and subparts based on the radius/ size of the roundabout itself as I had to scale each piece to fit the ratio.
+
+---------------------------------------------------------------------------
+Team Members Contributions:
+Jiaxin Huang - This member created the Stand and Swing classes which controls the display and movement of the swings side by side in different speeds. She also set the coding format for the rest of the team by creating the group_1_assignment5 processing file that creates the ground that holds all the objects and the camera that can be controled by the mouse movement. To put all her classes to work, this member added her portion of the project into the main group_1_assignment5 file by creating/displaying multiple swing sets and moving them in different angle, velocity, acceleration using the parameters and function calls.
+
+Iris Shea - This member created the Ball and Children class which draws and moves the objects. They also implemented the ball and children into the group_1_assignments5 code. 
+
+Corey Zhang - This member created the Roundabout class which draws and spins a roundabout. And implemented the roundabouts into the main code group_1_assignments5 based off of the camera and background made.

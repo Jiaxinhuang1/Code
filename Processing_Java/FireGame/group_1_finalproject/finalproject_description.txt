@@ -1,0 +1,52 @@
+Intended Game: Our team will be adding to our assignment 7 game about coding a platformer/puzzle game similar to Fire boy and Water Girl where the players can move using arrow keys or WASD to reach a certain goal. In between, they can collect fire particles to increase health and can fall into water to lose.
+
+Rules of Play: 
+Win Condition - Player reaches a certain goal area.
+Lose Condition - Player’s health reaches 0 or when they fall into water or come in contact with the water character.
+Player’s health will constantly decrease with time like a flame losing intensity after sitting there for a while.
+Player’s health can be restored by collecting fire particles around the entire canvas.
+
+Keyboard Controls:
+Left Arrow or A - Player move left
+Right Arrow or D - Player move right
+Up Arrow or W - Player moves up
+Down Arrow or S - Players moves down
+P - Pause the game during gameplay
+Mouse Click - Navigate through buttons
+
+Purpose of classes:
+Buttons- This class will be created that takes in float x, y, w, h, color c, and string t which controls the position, size, color, and text of the buttons. This class will have one function: A buttonPressed(String command) function that takes in a string to tell the players what scenes to change into based on the command.
+
+Characters - This class will be created that takes in float xPos and yPos which controls the position of the player character. It loads the array to PImages for the sprite animation in the constructor. This class will have two functions: An update() function that uses the booleans from the main program to change the position of the character based on key pressed and gravity with constraints inside the canvas. A displayCharacter() function that animates the character when the game is not paused.
+
+Goal - This class will be created that takes in float x, y, w, and h to control the position and size of the goal. This class will have one function: A display() function that draws a rectangle on screen with an ellipse door knob.
+
+Screens - This class will be created that takes in integer w and h to control the size of the screens. It creates button objects from the Buttons class and uses them in the screens. This class contains 5 functions: A menuSreen() function that draws three rectangles to decorate the menu screen, a text for the title of the game, and a play button to go to the gameplay scene. A gameplayScreen() function that sets the color of the background and draws the ground. A loseScreen() function that shows “YOU LOSE” text, a restart button that takes you to the gameplay screen with everything reseted, and an exit button that closes the game. A winScreen() function that contains the same elements as the loseScreen but with the text showing “YOU WIN”. A pauseScreen() function that shows a popup with the title “GAME PAUSED”, a continue button that resumes the game where you left off, and a quit button that closes the game. A creditScreen() function that displays the sound credits as popup from menu.A settingScreen() function that displays a volume slider and mute buttons in menu.
+
+Scrollbar - This class will be created that takes in integer w and h to control side of the scrollbar and float xpos and ypos to control the position of it. It will have 5 functions: The update() function checks whether the mouse is over the scrollbar when clicked and controlls the position of the handle. The constrain() function returns the minumum value of the handle so it does not go beyond the size of scrollbar. The overEvent() function returns a boolean to check if mouse is hovered over scrollbar. The display() function draws the scrollbar. The getPos() function returns the value of the current position of the handle.
+
+Sound - This class is created but not used since the functionality was weird but it was supposed play and stop a sound file based on the parameters inside the functions of playSound() and stopSound() function.
+
+HealthSystem - This class will be created that takes in integers maxHealth, minHealth, currentHealth, restore, damage, fsize, fx1, fy1, fx2, fy2, fx3, fy3, waterx, watery, waterWidth, and waterHeight. The class has 5 functions: a display() function which creates the healthbar and text, a death() boolean function that constantly checks to see if the health has reached 0, a kill() function that takes in the xPos and yPos of the character and creates water and sets health to 0 if the player touches the water, the health() function which is constantly taking away 1 health from the player and ensures that the health doesn't go above or below the maximum/minimum possible health, a restoreHealth() function which checks when the fireballs are spawned and respawns them after a given time, and a fireball() function which takes in the xPos and yPos of the character, creates the fireballs, and adds health back to the player whenever they collide with a fireball. 
+
+Enemy - This class is created to be the base class for all enemies added to the game in the future. Right now, it doesn't have very much but it's use is to be flexible, to be changed and modified for any new enemies that might be added into this game later. 
+
+WaterEnemy - This class is created to extend upon the basic enemy class. In this class, the waterenemy shape is created in the display() function. The movement of the waterenemy is also here with the movement() function. Using a minimum and maximum position on an axis, it moves back and forth. Finally, in a boolean function collision(), it's is constantly checking for collision with the player character by comparing their x and y positions. 
+
+Level - 
+
+---------------------------------------------------------------------------
+Challenges:
+1. Jiaxin's Challenges: The thing I had the most difficulty in was figuring out how to make the sounds not glitch when played. At first I thought it was an issue with multiple sound files or the duration of each but after I took them out and just added one, the problem was still there. I then realized that it was a processing problem because a lot of people are having the same issue as me when I searched it up on Google. Controling the volume with a scrollbar was also confusing. There was a lot of math I needed to do to calculate the ratio between the length of the scrollbar with the constrains of the sound file amplitude function.
+
+2. Iris's Challenges: The thing I had the most difficulty with was figuring out the boundaries for the water, the fireballs, and waterenemy. Since I wanted to ensure that the main "body" of the player would be how things were collected and not the top portion of the player, I tried to keep the hitboxes small enough that the objects wouldn't collide too far away but still big enough that it isn't too tricky to collect them. I had a similar issue with working on the waterenemy. Since the position of the enemy moves back and forth, I had to figure out how big I want the hitbox to be without making the player get too close to the enemy. 
+
+3. Corey's Challenges:
+
+---------------------------------------------------------------------------
+Team Members Contributions:
+Jiaxin Huang - (Previous Assignment) This member created the Buttons, Characters, Goal, and Screens which displays and controls the functionality of traveling between the GUI screens, the character movements, and the interaction with the goal system. She added her portion of the project into the main program by creating one character, one screen, and one goal object that controls the transition between 5 scenes (menu, gameplay, pause, lose, win). She used a small snippet of code for boolean interaction from John McCaffrey's Youtube video on programming platform and jump using processing and the fire spread sheet from Microvector with some parts edited herself. (Current Assignment) To add to assignment 7, this member found music and sound effects online and created the Scrollbar and Sound class to control the volume of the sound effects by adding a new screen in the menu. She also added the credits screen to credit where she found the sound sources.
+
+Iris Shea - This member created the Health System for the game which controls the fireballs that the player can collect to restore health, water that instantly kills the player, and the health bar that is constantly going down slowly as the player traverses the level. She also added the Enemy and WaterEnemy systems that add another obstacle for the player to overcome. The water enemy moves back and forth and tries to kill the player if the player collides with it. This member also added her portion of the project to the main file. 
+
+Corey Zhang - 
