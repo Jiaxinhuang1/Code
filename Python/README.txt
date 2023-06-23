@@ -1,1 +1,1 @@
-Python code projects
+Python code projects from Elements of Computing courses
