@@ -1,0 +1,43 @@
+body {
+	background-color: darkslategray;
+}
+
+figure {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+img {
+	z-index: 0;
+	width: 640px;
+	height: 480px;
+	border: 2px solid darkgray;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 28pt;
+	text-transform: uppercase;
+	text-align: center;
+	z-index: 20;
+	background-color: black;
+	color: white;
+	padding: 10px;
+	width: 620px;
+	border: 2px solid darkgray;
+}
+
+#imageCaption {
+	font-size: 25pt;
+	font-weight: bold;
+	background-color: black;
+	color: white;
+	padding: 10px;
+	width: 620px;
+	font-variant: small-caps;
+	text-align: center;
+	border: 2px solid darkgray;
+	z-index: 20;
+}

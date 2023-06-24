@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+   <title>HW9</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="Image Slideshow with Javascript">
+   <meta name="author" content="Jiaxin Huang">
+   <link href="HW9.css" rel="stylesheet">
+   <script type = "text/javascript" src = "HW9.js"> </script>
+</head> 
+
+<body onload ="ChangeImage()"> 
+   <figure>
+      <h1> Travel Show </h1>
+      <img src="agra_fort.jpg" id = "image" alt="Picture of Travel Show">
+      <figcaption id="imageCaption">
+         Agra Fort
+      </figcaption>
+   </figure>
+   <input type="button" onclick="StartSlides()" value="Start" class="button">
+   <input type="button" onclick="EndSlides()" value="End" class="button">
+</body>
+</html>

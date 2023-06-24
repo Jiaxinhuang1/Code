@@ -1,0 +1,42 @@
+body {
+	background-color: #74A99C;
+	position: relative;
+	top: 100px;
+}
+
+h1 {
+	font-size: 25pt;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+}
+
+#form {
+	background-color: #BBDFD6;
+	padding: 30px;
+	border: 2px solid darkcyan;
+	font-size: 18pt;
+	float: center;
+	margin: auto;
+}
+
+.button {
+	border: 1px solid darkcyan;
+	font-weight: bold;
+	background-color: #74A99C;
+	font-variant: small-caps;
+	font-size: 18px;
+	margin-top: 30px;
+	width: 150px;
+	height: 40px;
+	align-self: center;
+}
+
+.button:hover {
+	background-color: #AFEBDC;
+}
+
+.button:active {
+	background-color: #637C76;
+	color: whitesmoke;
+}

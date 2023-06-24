@@ -1,0 +1,46 @@
+body {
+	background-color: #F3C991;
+	font-family: 'Chelsea Market';
+	color: #4E2D00;
+}
+
+#Question {
+	font-size: 18px;
+	font-weight: bolder;
+	color: #000000;
+}
+
+#LeftTable {
+	position: relative;
+	left: 42%;
+	top: -320px;
+}
+
+#RightTable {
+	position: relative;
+	top:  20px;
+	margin: 10px;
+}
+
+table {
+	text-align: left;
+	width: 40%;
+	height: 40%;
+	border: 3px solid black;
+	margin: 5px;
+	padding: 10px;
+	background-color: #F6CCCC;
+}
+
+#button {
+	font-family: "Chelsea Market";
+	border: 3px solid black;
+	font-weight: bolder;
+	background-color: #E99A9A;
+	color: #000000;
+	width: 150px;
+	height: 50px;
+	position: relative;
+	left: 30%;
+	top: -300px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+   <title>HW8</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="Random Images on Load">
+   <meta name="author" content="Jiaxin Huang">
+   <link href="HW8.css" rel="stylesheet">
+</head> 
+
+<body onload ="ChangeImage()"> 
+   <script type="text/javascript">
+      function ChangeImage(){
+         var img_src = new Array("GalaxyCluster.jpg", "InteractingGalaxies.jpg", "M51.jpg", "M104.jpg", "NGC1300.jpg", "NGC6217.jpg")
+         var img_caption = new Array("Galaxy Cluster", "Interacting Galaxies", "M 51", "M 104", "NGC 1300", "NGC 6217")
+         var rnd_idx = Math.trunc(Math.random() * img_src.length)
+         document.getElementById("image").src = img_src[rnd_idx]
+         document.getElementById("imageCaption").innerHTML = img_caption[rnd_idx]
+      }
+   </script>
+   <figure>
+      <h1> Galaxies </h1>
+      <img src="GalaxyCluster.jpg" id = "image" alt="Picture of Galaxy Cluster">
+      <figcaption id="imageCaption">
+         Galaxy Cluster
+      </figcaption>
+   </figure>
+</body>
+</html>

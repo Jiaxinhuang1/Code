@@ -1,0 +1,44 @@
+body {
+	background-color: #34495E;
+}
+
+#login {
+	padding: 30px;
+	width: 50%;
+	border: 3px solid darkgray;
+	font-size: 18pt;
+	float: center;
+	margin: auto;
+	background-color: #AEB6BF;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+table {
+	margin: auto;
+}
+
+.button {
+	border: 2px solid darkgray;
+	font-weight: bold;
+	background-color: #85929E;
+	font-variant: small-caps;
+	font-size: 18px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 10px;
+	width: 125px;
+	height: 40px;
+	align-self: center;
+}
+
+.button:hover {
+	background-color: #D6DBDF;
+}
+
+.button:active {
+	background-color: #AEB6BF;
+	color: whitesmoke;
+}

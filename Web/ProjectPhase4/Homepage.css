@@ -1,0 +1,309 @@
+body{
+    background-color: #9CD1E7;
+    font-family: 'Varela Round';
+}
+
+@font-face {
+    font-family: 'Varela Round'; /*a name to be used later*/
+    src: url('VarelaRound-Regular.ttf'); /*URL to font*/
+}
+
+#top
+{
+    padding: 2em;
+    padding-bottom: .05em;
+    background-color: #9CD1E7;
+    font-family: 'Varela Round';
+}
+
+#top h1
+{
+    width:90%;
+    padding: 0;
+    font-size: 60pt;
+    margin: 0;
+    text-align: center;
+    color:black;
+}
+
+#top p
+{
+    text-align: right
+}
+
+ul#navlist
+{
+    float: left;
+    padding: 0;
+    margin: 0 0 0 0;
+    list-style-type: none;
+    width: 100%;
+
+}
+
+ul#navlist li { 
+    display: inline;
+}
+
+ul#navlist li a
+{
+    float: left;
+    width: 14.34%;
+    color: #fff;
+    background-color: #244B7B;
+    padding: 0.6em 1em;
+    text-decoration: none;
+    border-right: 1px solid #fff;
+    text-align: center;
+}
+
+ul#navlist li a:hover
+{
+    background-color: #369;
+    color: #fff;
+}
+
+#pagebody{
+    margin-top: 50px;
+    background-color: white;
+    border: 2px solid #244B7B;
+    margin-bottom: 0%;
+}
+
+#leftPara{
+    float: left; 
+    width: 40%;
+    margin: 0;
+    padding: 1em;
+    position: relative;
+    left: 10%;
+    
+}
+
+#leftPara p
+{
+    font-size: 18pt;
+    border: 2px solid #244B7B;
+    margin: 10px;
+    padding: 20px;
+    padding-left: 30px;
+    text-align: center;
+    font-family: 'Varela Round';
+}
+
+#abouttext {
+    font-size: 14pt;
+    margin: 10px 10px;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24pt;
+    font-weight: bold;
+    padding: 15px;
+    margin: 10px;
+    color: white;
+    background-color: #6D89C2;
+}
+
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24pt;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0;
+}
+.about {
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 25px;
+    float: left;
+}
+
+figure {
+    position: relative;
+    width: 45%;
+    height: 45%;
+    padding-right: 20px;
+}
+
+figure img {
+    width: 40%;
+    height: 40%;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #244B7B;
+}
+
+figcaption {
+  display: inline-block;
+  vertical-align: text-top;
+  font-size: 10pt;
+}
+
+#PhotoCollection 
+{
+    float: right;
+    width: 200px;
+    margin: 0;
+    padding-right: 5%;
+
+}
+
+#PhotoCollection img
+{
+    float: right;
+    margin: 0;
+    padding: 0.5em;
+
+}
+
+#PhotoCollection2 
+{
+    float: right;
+    width: 400px;
+    margin: 0;
+    padding: 0.5em;
+}
+
+#PhotoCollection2 img
+{
+    float: right;
+    margin: 0;
+    padding: 0.5em;
+}
+
+#subHeading h2{
+    font-variant: normal;
+    padding: 20px;
+    text-align: center
+}
+
+#footer {
+    text-align: center;
+    padding:15px;
+    background-color: #244B7B;
+    color: white;
+    float:left;
+    /* position: fixed;
+    left: 0;
+    bottom: 0; */
+    width: 98%;
+}
+
+/* Faculty Page CSS Items */
+#facultyRow {
+    float: left;
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 55%;
+}
+
+#facultyRow p {
+    font-weight: bold;
+    font-size: 110%;
+    margin-top: 30px;
+    margin-bottom: -10px;
+}
+
+#facultyImgRow {
+    float:right;
+    margin-top: 20px;
+    width: 40%;
+}
+
+#facultyImgRow img {
+    width: 100%;
+}
+
+/* Comments Page */
+.commentspage{
+    padding: 20px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+
+/*FAQ CSS*/
+/*Questions First Level*/
+
+#Questions ul {
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    overflow: hidden;
+}
+
+#Questions ul:hover {
+    overflow: visible;
+    cursor: pointer;
+}
+
+
+#Questions .question {
+    font-weight: bold;
+    font-size: 22px;
+    border: 2px solid darkslategray;
+    font-variant: small-caps;
+}
+
+#Questions li {
+    position: relative;
+    padding-top: 10px;
+    padding-left: 20px;
+    margin: 20px;
+    float: left;
+    background-color: #B6E6F0;
+    color: black;
+}
+
+#Questions li:hover {
+    background-color: #434343;
+    color: white;
+}
+
+/* Answers Second */
+#Questions ul ul {
+    max-height: 0;
+    transition: max-height 0.5s;
+}
+
+#Questions a {
+    color: white;
+}
+
+#Questions a:hover{
+    color: skyblue;
+}
+
+.answer {
+    font-weight: normal;
+    font-size: 16pt;
+    font-variant: normal;
+}
+
+#Questions ul li:hover ul {
+    max-height: 999px;
+}
+
+#Questions ul ul li {
+    float: none;
+    background-color: #434343;
+    color: white;
+}
+
+/*CSS for Courses*/
+#Showcase{
+    text-align: center;
+    padding: 20px;
+    color: #496777;
+}
+#Tables table{
+    align-self: center;
+    float:none;
+    margin-left:20%;
+    margin-right: 20%;
+    background-color: #DAF3FF ;
+}

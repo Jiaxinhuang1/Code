@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+   <title>About AET</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="About AET Frequently Asked Questions">
+   <meta name="author" content="Group1">    
+   <?php 
+        $css = $_COOKIE["css"];
+        if (!$css) { $css = "Homepage"; } 
+   ?>
+   <link rel="stylesheet" href="<?php echo $css; ?>.css">
+   <!-- <link rel="stylesheet" type="text/css" href="Homepage.css" />-->
+   <link href="Images/logo.png" rel="icon">
+   <script src="jquery-3.6.0.min.js"></script>
+   <script>
+    $(document).ready(function() {
+        $('.question').children().hide();
+        var bgColor = $('.question').css('background-color');
+        $('.question').click(function(event) {
+            $(this).children().toggle();
+            if ($(this).children().is(":visible")) {
+                $(this).css('background-color', '#369');
+            }
+            else {
+                $(this).css('background-color', bgColor);
+            }
+
+        })
+    })
+   </script>
+</head> 
+
+<body>
+
+    <div id="top">
+        <a href = "Homepage.php" style="text-decoration: none">
+            <img src="Images/logo.png" alt = "AET but it's in comic sans" width= "100" height="100" style= "float:left; position:relative; top:-20px">
+            <h1>ABOUT AET</h1>
+        </a>
+        <a href="themeset.php?choice=Homepage&currentPage=FAQ.php"><button id = "themeBtn">Normal</button></a>
+        <a href="themeset.php?choice=HomepageDark&currentPage=FAQ.php"><button id = "themeBtn">Dark</button></a>
+    </div>
+
+    <ul id="navlist">
+        <li><a href="Homepage.php">Home</a></li>
+        <li><a href="Courses.php">Courses</a></li>
+        <li><a href="Faculty.php">Faculty</a></li>
+        <li><a href="FAQ.php">FAQ</a></li>
+        <li><a href="ContactUs.php">About Us</a></li>
+        <li><a href="Comments.php">Contact Us</a></li>
+    </ul>
+    
+    <div id="pagebody">
+        <div id="subHeading">
+            <h2>Frequently Asked Questions</h2>
+        </div> <!--subHeading-->
+    </div> <!-- pagebody -->
+    <div id="Questions">
+        <ul>
+            <li class="question">>>> What kind of emphasis does AET have, and do we need to choose a specific one?
+                <ul>
+                    <li class="answer">AET offers classes in various emphasis including digital visualization, game development, music and sound design, and projection, lighting, and interactivity. Students can take multiple classes in various emphasis areas.</li>
+                </ul>
+            </li>
+            <li class="question">>>> How do I register for “restricted” AET courses?
+                <ul>
+                    <li class="answer">AET students must need to have the required prerequisites before taking the course. Students outside the major or AET students without the required perquisites must need to have to obtained explicit instructor permission.</li>
+                </ul>
+            </li>
+            <li class="question">>>> May I have two majors simultaneously?
+                <ul>
+                    <li class="answer">The Department of AET officially allows simultaneous majors after October 2019, but this does not change requirements for AET or other programs. Students must be sure to meet with their academic advisors to ensure that they can complete the requirements for a double major.</li>
+                </ul>
+            </li>
+            <li class="question">>>> Can I minor in Art and Entertainment Technologies?
+                <ul>
+                    <li class="answer">AET does not offer a minor for non-AET students. However, the University of Texas at Austin offers a Bridging Disciplines Program in Digital Arts & Media in which students can take AET related courses.</li>
+                </ul>
+            </li>
+            <li class="question">>>> What is the mandatory advising requirement for AET students?
+                <ul>
+                    <li class="answer">AET students must be advised by their academic advisor before they can register for any semester or summer classes. The department advisors will give details about the mandatory advising period and students can book their time the month of or before registration begins.</li>
+                </ul>
+            </li>
+            <li class="question">>>> Who can help me with job searching?
+                <ul>
+                    <li class="answer">Students can visit the <a href="https://designcreativetech.utexas.edu/students/industry-relations/internships-job-opportunities">Official AET website</a> to look for a list of open jobs or contact industry relations for services such as one-on-one consultations, webinars, network guidance, and assistance with resumes, cover letters, and portfolios.</li>
+                </ul>
+            </li>
+            <li class="question">>>> How do I check what courses do I need in order to graduate?
+                <ul>
+                    <li class="answer">Students can search up <a href="https://utdirect.utexas.edu/apps/degree/audits/">Interactive Degree Audit for UT</a>, submit an audit request, and look at the results. There, it will show the estimate time it takes for them to graduate as well as the courses they have taken and need to take.</li>
+                </ul>
+            </li>
+            <li class="question">>>> Is there a certificate I can get alongside AET degree?
+                <ul>
+                    <li class="answer">Students can apply for an Elements of Computing Certificate and take 18 hours of computer science courses to fulfill the secondary field of study requirement on the AET degree plan and get a certificate with it.</li>
+                </ul>
+            </li>
+            <li class="question">>>> How do I complete the Secondary Field of Study?
+                <ul>
+                    <li class="answer">Students must take 15 hours approved by the coordinator of AET program in which 9 of the hours must be upper division. They can continue to take more AET courses or courses in other fields such as Computer Science, Studio Arts, or more.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div id = "footer">
+            © Melina Rosales, Jiaxin Huang, Soo Aguilar, Micah Chow
+            <span style = "margin-left: 30px" > Updated on April 18, 2022 </span>
+    </div> <!--footer -->
+</body>
+</html>

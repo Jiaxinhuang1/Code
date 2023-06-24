@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+   <title>HW7</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="Registration Form Validation">
+   <meta name="author" content="Jiaxin Huang">
+   <link href="HW7.css" rel="stylesheet">
+   <script src="HW7.js" defer></script>
+</head> 
+
+<body>
+   <h1> Registration Form Validation </h1>
+   <form name="RegistrationForm">
+      <table id="form">
+         <tr>
+            <th> <label> Username: </label> </th>
+            <th> <input name="username" type="text" size="30"> </th>
+         </tr>
+         <tr>
+            <th> <label> Password: </label> </th>
+            <th> <input name="password" type="password" size="30"> </th>
+         </tr>
+         <tr>
+            <th> <label> Repeat Password: </label> </th>
+            <th> <input name="repeat_pass" type="password" size="30"> </th>
+         </tr>
+         <tr>
+            <th> <input type="button" onclick="Validate()" value="Register" class="button"> </th>
+            <th> <input type="reset" value="Clear" class="button"> </th>
+         </tr>
+      </table>
+   </form>
+</body>
+</html>

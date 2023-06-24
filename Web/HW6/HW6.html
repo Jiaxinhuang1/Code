@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+   <title>HW6</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="Mortgage Calculator in JavaScript">
+   <meta name="author" content="Jiaxin Huang">
+   <link href="HW6.css" rel="stylesheet">
+   <script src="HW6.js" defer></script>
+</head> 
+
+<body>
+   <h1> Mortage Calculator </h1>
+   <form name="MortageForm">
+      <table id="form">
+         <tr>
+            <th>
+               <label> Principal amount:</label> <br>
+               <span style="font-size:8pt; font-weight:normal"><i>Floating point number</i></span>
+            </th>
+            <th>
+               <input name = "principal_amt" type = "text" size = "30">
+            </th>
+         </tr>
+         <tr>
+            <th>
+               <label> Yearly Interest Rate: </label> <br>
+               <span style="font-size:8pt; font-weight:normal"><i>Float number between 0-1</i></span>
+            </th>
+            <th>
+               <input name = "interest_rate" type = "text" size = "30">
+            </th>
+         </tr>
+         <tr>
+            <th>
+               <label> Loan term in Months: </label> <br>
+               <span style="font-size:8pt; font-weight:normal"><i>Integer value</i></span>
+            </th>
+            <th>
+               <input name = "loan_term" type = "text" size = "30" >
+            </th>
+         </tr>
+         <tr>
+            <th>
+               <input type="button" onclick="Calculate()" value="Calculate" class="button">
+            </th>
+            <th>
+               <input type="reset" value="Clear" class="button">
+            </th>
+         </tr>
+      </table>
+      </form>
+      <h1>Output</h1>
+      <div id="Output">
+         <p>
+            <b>Monthly Payment:</b>
+         </p>
+         <p id="monthly payment">
+            $ 0.0
+         </p>
+         <p>
+            <b>Sum of all Payments:</b>
+         </p>
+         <p id="sum payment">
+            $ 0.0
+         </p>
+         <p>
+            <b>Total Interest Paid:</b>
+         </p>
+         <p id="total interest">
+            $ 0.0
+         </p>
+      </div>
+
+   </body>
+   </html>

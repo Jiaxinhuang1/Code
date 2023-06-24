@@ -1,0 +1,61 @@
+body {
+	background-color: #B9BAEE;
+}
+
+h1 {
+	font-weight: bold;
+	text-align: center;
+	font-size: 40pt;
+	font-variant: small-caps;
+	margin: 5px;
+}
+
+h2 {
+	font-weight: bold;
+	text-align: center;
+	font-size: 20pt;
+	font-variant: small-caps;
+	margin: 5px;
+}
+
+#Timer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#gridImage {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*align items inside grid container in center*/
+#gridContainer, #gridContainerTwo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#gridContainer img, #gridContainerTwo img {
+	position: relative;
+	margin: 5px;
+	border: 1px solid black;
+}
+
+#DoneBtn {
+	background-color: #ECE6AD;
+	width: 100px;
+	height: 30px;
+	font-size: 15pt;
+	font-variant: small-caps;
+	margin-left: 100px;
+}
+
+#DoneBtn:hover {
+	background-color: #F7F5E4;
+}
+
+#DoneBtn:active {
+	background-color: #7C7A6B;
+}

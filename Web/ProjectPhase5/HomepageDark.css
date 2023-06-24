@@ -1,0 +1,347 @@
+body{
+    background-color: #566573;
+    font-family: 'Varela Round';
+    color: white;
+}
+
+/* DarkMode Buttons */
+#themeBtn {
+    background-color: #2C3E50;
+    padding: 0.6em 1em;
+    position: relative;
+    left: 80%;
+    top: -10px;
+    border: 0px;
+    font-family: 'Varela Round';
+    width: 100px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#themeBtn:hover {
+    background-color: #369;
+    color: #fff;
+}
+
+#themeBtn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@font-face {
+    font-family: 'Varela Round'; /*a name to be used later*/
+    src: url('VarelaRound-Regular.ttf'); /*URL to font*/
+}
+
+#top
+{
+    padding: 2em;
+    padding-bottom: .05em;
+    font-family: 'Varela Round';
+    background-color: #17202A;
+    position: relative;
+    top: -10px;
+    margin-top: 5px;
+    margin-bottom: -8px;
+}
+
+#top h1
+{
+    width:90%;
+    padding: 0;
+    font-size: 60pt;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+#top p
+{
+    text-align: right
+}
+
+ul#navlist
+{
+    float: left;
+    padding: 0;
+    margin: 0 0 0 0;
+    list-style-type: none;
+    width: 100%;
+}
+
+ul#navlist li { 
+    display: inline;
+}
+
+ul#navlist li a
+{
+    font-size: 15pt;
+    font-weight: bold;
+    float: left;
+    width: 13.92%;
+    color: #fff;
+    background-color: #2C3E50;
+    padding: 0.6em 1em;
+    text-decoration: none;
+    border-right: 1px solid #fff;
+    text-align: center;
+}
+
+ul#navlist li a:hover
+{
+    background-color: #369;
+    color: #fff;
+}
+
+#pagebody {
+    margin-top: 50px;
+    background-color: #17202A;
+    border: 2px solid #17202A;
+    margin-bottom: 0%;
+}
+
+#leftPara{
+    float: left; 
+    width: 40%;
+    margin: 0;
+    padding: 1em;
+    position: relative;
+    left: 10%;
+    
+}
+
+#leftPara p
+{
+    font-size: 18pt;
+    border: 2px solid #2C3E50;
+    background-color: #2C3E50;
+    margin: 10px;
+    padding: 20px;
+    padding-left: 30px;
+    text-align: center;
+    font-family: 'Varela Round';
+}
+
+#abouttext {
+    font-size: 14pt;
+    margin: 10px 10px;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24pt;
+    font-weight: bold;
+    margin: 10px;
+    color: black;
+}
+
+/*CSS for ABOUT US*/
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24pt;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0;
+    background-color: #17202A;
+    color: white;
+    margin-bottom: 10px;
+
+}
+.about {
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 25px;
+    float: left;
+}
+
+figure {
+    position: relative;
+    width: 45%;
+    height: 45%;
+    padding-right: 20px;
+}
+
+figure img {
+    width: 40%;
+    height: 40%;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #00205B;
+}
+
+figcaption {
+    display: inline-block;
+    vertical-align: text-top;
+    font-size: 10pt;
+}
+
+#PhotoCollection 
+{
+    float: right;
+    width: 200px;
+    margin: 0;
+    padding-right: 5%;
+
+}
+
+#PhotoCollection img
+{
+    float: right;
+    margin: 0;
+    padding: 0.5em;
+
+}
+
+#PhotoCollection2 
+{
+    float: right;
+    width: 400px;
+    margin: 0;
+    padding: 0.5em;
+}
+
+#PhotoCollection2 img
+{
+    float: right;
+    margin: 0;
+    padding: 0.5em;
+}
+
+#subHeading h2{
+    font-variant: normal;
+    text-align: center;
+    color: white;
+}
+
+#footer {
+    text-align: center;
+    padding:15px;
+    background-color: #17202A;
+    color: white;
+    float:left;
+    /* position: fixed;
+    left: 0;
+    bottom: 0; */
+    width: 98%;
+}
+
+/* Faculty Page CSS Items */
+#facultyRow {
+    float: left;
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 55%;
+}
+
+a {
+    color: #8AB4F7
+}
+
+a:visited {
+    color: #C589F8
+}
+
+
+#facultyRow h3 {
+    background-color: #17202A;
+    color: white;
+}
+
+#facultyRow p {
+    font-weight: bold;
+    font-size: 110%;
+    margin-top: 30px;
+    margin-bottom: -10px;
+}
+
+#facultyImgRow {
+    float:right;
+    margin-top: 20px;
+    width: 40%;
+}
+
+#facultyImgRow img {
+    width: 100%;
+}
+
+/* Comments Page */
+.commentspage{
+    padding: 20px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+
+/*FAQ CSS*/
+.question {
+    list-style: none;
+    width: 90%;
+    background-color: #2C3E50;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding: 25px;
+    color: white;
+    font-size: 22pt;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+.question:hover {
+    background-color: #369;
+}
+
+.answer {
+    list-style: none;
+    font-size: 14pt;
+    font-weight: thin;
+    font-variant: normal;
+}
+
+/*CSS for Courses*/
+#Showcase{
+    text-align: center;
+    padding: 20px;
+    color: #496777;
+}
+
+.caption {
+    font-size: 30pt;
+    font-variant: small-caps;
+    color: white;
+    background-color: #17202A;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+
+
+#Tables table{
+    align-self: center;
+    float:none;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-collapse:separate; 
+    border-spacing: 5px;
+}
+
+#Tables table tr {
+    margin-bottom: 50px;
+    background-color: #2C3E50;
+    color:white;
+    font-size: 12pt;
+}
+
+#Tables .name {
+    font-size: 15pt;
+    padding-left: 75px;
+}
+
+#Tables table caption {
+    font-size: 30pt;
+    font-variant: small-caps;
+    color: white;
+    background-color: #17202A;
+}
+

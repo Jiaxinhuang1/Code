@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+   <title>HW11</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="Jigsaw Puzzle With Javascript">
+   <meta name="author" content="Jiaxin Huang">
+   <link href="HW11.css" rel="stylesheet">
+   <script type = "text/javascript" src = "HW11.js"></script>
+</head> 
+<body onload="LoadPuzzle()">
+   <h1 id="Title"> Jigsaw Puzzle </h1>
+   <div id="Timer">
+      <h2 id="timeCount"> Timer: 00 </h2>
+      <input type = "button" value = "Done" onclick = "StopTimer()" id = "DoneBtn">
+   </div>
+   <img src="329E.HW11.images/puzzle1/puzzleback.gif" id = "gridImage" alt="Picture of Grid"><br>
+   <div id="gridContainer">
+      <img style = "top: 0px; left: 0px;" onmousedown = "Grabber(event);" src="329E.HW11.images/puzzle1/img1-1.jpg" id = "img1" alt="Picture of Grid Item">
+      <img style = "top: 0px; left: 0px;" onmousedown = "Grabber(event);" src="329E.HW11.images/puzzle1/img1-2.jpg" id = "img2" alt="Picture of Grid Item">
+      <img style = "top: 0px; left: 0px;" onmousedown = "Grabber(event);" src="329E.HW11.images/puzzle1/img1-3.jpg" id = "img3" alt="Picture of Grid Item">
+      <img style = "top: 0px; left: 0px;" onmousedown = "Grabber(event);" src="329E.HW11.images/puzzle1/img1-4.jpg" id = "img4" alt="Picture of Grid Item">
+      <img style = "top: 0px; left: 0px;" onmousedown = "Grabber(event);" src="329E.HW11.images/puzzle1/img1-5.jpg" id = "img5" alt="Picture of Grid Item">
+      <img style = "top: 0px; left: 0px;" onmousedown = "Grabber(event);" src="329E.HW11.images/puzzle1/img1-6.jpg" id = "img6" alt="Picture of Grid Item">
+   </div>
+   <div id="gridContainerTwo">
+      <img style = "top: 0px; left: 0px;" onmousedown = "Grabber(event);" src="329E.HW11.images/puzzle1/img1-7.jpg" id = "img7" alt="Picture of Grid Item">
+      <img style = "top: 0px; left: 0px;" onmousedown = "Grabber(event);" src="329E.HW11.images/puzzle1/img1-8.jpg" id = "img8" alt="Picture of Grid Item">
+      <img style = "top: 0px; left: 0px;" onmousedown = "Grabber(event);" src="329E.HW11.images/puzzle1/img1-9.jpg" id = "img9" alt="Picture of Grid Item">
+      <img style = "top: 0px; left: 0px;" onmousedown = "Grabber(event);" src="329E.HW11.images/puzzle1/img1-10.jpg" id = "img10" alt="Picture of Grid Item">
+      <img style = "top: 0px; left: 0px;" onmousedown = "Grabber(event);" src="329E.HW11.images/puzzle1/img1-11.jpg" id = "img11" alt="Picture of Grid Item">
+      <img style = "top: 0px; left: 0px;" onmousedown = "Grabber(event);" src="329E.HW11.images/puzzle1/img1-12.jpg" id = "img12" alt="Picture of Grid Item">
+   </div>
+</body>
+</html>

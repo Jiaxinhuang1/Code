@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>New HW3</title>
+	<meta charset ="UTF-8">
+	<meta name="description" content="A Form about UT Campus Feedback">
+	<meta name="author" content="Jiaxin Huang">
+	<link href="HW3Format.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Chelsea Market' rel='stylesheet'>
+</head>
+<body>
+<form method = "POST" action = "http://www.cknuckles.com/cgi/echo.cgi">
+
+<table id="RightTable">
+	<tr>
+		<th>
+			<label id="Question"> Student's Name:</label> 
+		</th>
+		<th>
+			<input name = "name" type = "text" size = "30">
+		</th>
+	</tr>
+	<tr>
+		<th>
+			<label id="Question"> Street Address: </label>
+		</th>
+		<th>
+			<input name = "email" type = "text" size = "30">
+		</th>
+	</tr>
+	<tr>
+		<th>
+			<label id="Question"> Email Address: </label>
+		</th>
+		<th>
+			<input name = "email" type = "text" size = "30" >
+		</th>
+	</tr>
+</table>
+<table id="RightTable">
+	<tr>
+		<th id="Question">
+			<b>Things you liked the most about the UT Campus:</b>
+		</th>
+	</tr>
+	<tr>
+		<td>
+			<input name = "attraction[]" type = "checkbox" value = "students" /> 
+			<label> Students </label>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input name = "attraction[]" type = "checkbox" value = "location" />
+			<label> Location  </label>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input name = "attraction[]" type = "checkbox" value = "location" />
+			<label> Campus </label>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input name = "attraction[]" type = "checkbox" value = "courses" />
+			<label> Courses Offered  </label>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input name = "attraction[]" type = "checkbox" value = "housing" />
+			<label> Housing </label>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input name = "attraction[]" type = "checkbox" value = "sports" />
+			<label> Sports </label>
+		<td>
+	</tr>
+</table>
+<table id="LeftTable">
+	<tr>
+		<th id="Question">
+			<b>How did you become interested in this university?</b><br />
+		</th>
+	<tr>
+		<td>
+			<input name = "connection" type = "radio" value = "family" /> 
+			<label> Family </label>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input name = "connection" type = "radio" value = "friends" /> 
+			<label> Friends </label>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input name = "connection" type = "radio" value = "television" /> 
+			<label> Television </label>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input name = "connection" type = "radio" value = "internet" /> 
+			<label> Internet </label>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input name = "connection" type = "radio" value = "other" /> 
+			<label> Other </label>
+		</td>
+	</tr>
+</table>
+<table id="LeftTable">
+<tr>
+	<th id="Question"> Departments Visited:
+		<select name = "departments">
+			<option selected = "selected"> College of Fine Arts </option>
+			<option> College of Education </option>
+			<option> College of Natural Sciences </option>
+			<option> Dell Medical School </option>
+			<option> McCombs School of Business </option>
+			<option> School of Architecture </option>
+			<option> Cockrell School of Engineering </option>
+		</select>
+	</th>
+</tr>
+<tr>
+	<th id="Question" align="left"> Additional Comments: <br />	
+		<textarea name = "comments" rows = "4" cols = "36"> Enter your comments here: </textarea>
+	</th>
+</tr>
+</table>
+<p>
+	<input type = "submit" value = "Enter" id = "button"/>
+	<input type = "reset" value = "Reset" id = "button"/>
+</p>
+
+</form>
+</body>

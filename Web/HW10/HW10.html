@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+   <title>HW10</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="Self Grading Quiz with PHP">
+   <meta name="author" content="Jiaxin Huang">
+   <link href="HW10.css" rel="stylesheet">
+   <script src="HW10.js" defer></script>
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+   <script>
+      $(myFunct(){
+         $("input[type='checkbox']").change(function(){
+            var len = $("input[type='checkbox']:checked").length;
+            if (len == 0)
+               alert("Please make sure to answer all the questions");
+               $("input[type='submit']").prop("disabled", true);
+            else
+               $("input[type='submit']").removeAttr("disabled");
+         });
+         $("input[type='checkbox']").trigger('change');
+      });
+   </script> -->
+
+</head> 
+<body>
+   <h1>Self-Grading Quiz</h1>
+   <form id = "quiz" method = "POST" action = "HW10.php">
+      <ol>
+         <h2>True / False</h2>
+         <li>
+            <h3>"URL" stands for "Universal Reference Link".</h3>
+            <div>
+               <input name = "Question1" type = "radio" value = "true" required/>
+               <label>a) True</label>
+            </div>
+            <div>
+               <input name = "Question1" type = "radio" value = "false" required/>
+               <label>b) False</label>
+            </div>
+         </li>
+         <li>
+            <h3>An Apple MacBook is an example of a Linux system.</h3>
+            <div>
+               <input name = "Question2" type = "radio" value = "true" required/>
+               <label>a) True</label>
+            </div>
+            <div>
+               <input name = "Question2" type = "radio" value = "false" required/>
+               <label>b) False</label>
+            </div>
+         </li>
+         <h2>Multiple Choice</h2>
+         <li>
+            <h3>Which of these do NOT contribute to packet delay in a packet switching network?</h3>
+            <div>
+               <input name = "Question3[]" type = "checkbox" value = "a"/>
+               <label>a) Processing delay at a router</label>
+            </div>
+            <div>
+               <input name = "Question3[]" type = "checkbox" value = "b"/>
+               <label>b) CPU workload on a client</label>
+            </div>
+            <div>
+               <input name = "Question3[]" type = "checkbox" value = "c"/>
+               <label>c) Transmission delay along a communications link</label>
+            </div>
+            <div>
+               <input name = "Question3[]" type = "checkbox" value = "d"/>
+               <label>d) Propagation delay</label>
+            </div>
+         </li>
+         <li>
+            <h3>The Internet layer is responsible for creating the packets that move across the network.</h3>
+            <div>
+               <input name = "Question4[]" type = "checkbox" value = "a"/>
+               <label>a) Physical</label>
+            </div>
+            <div>
+               <input name = "Question4[]" type = "checkbox" value = "b"/>
+               <label>b) Data Link</label>
+            </div>
+            <div>
+               <input name = "Question4[]" type = "checkbox" value = "c"/>
+               <label>c) Network</label>
+            </div>
+            <div>
+               <input name = "Question4[]" type = "checkbox" value = "d"/>
+               <label>d) Transport</label>
+            </div>
+         </li>
+         <h2>Fill in the Blank</h2>
+         <li><h3>
+            <input name = "Question5" type = "text" size = "10" required class = "blank"/>
+            <label>is a networking protocol that runs over TCP/IP, and governs communication between web browsers and web servers.</label>
+         </h3></li>
+         <li><h3>
+            <label>A small icon displayed in a browser table that identifies a website is called a</label>
+            <input name = "Question6" type = "text" size = "10" required class = "blank"/>
+            <label>.</label>
+         </h3></li>
+      </ol>
+      <input type = "button" value = "Grade" onclick = "Grade()" class = "button" id = "GradeBtn">
+      <input type = "reset" value = "Clear" class = "button">
+   </form>
+</body>
+</html>

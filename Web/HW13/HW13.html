@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+   <title>HW13</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="Memory Game Using JQuery">
+   <meta name="author" content="Jiaxin Huang">
+   <link href="HW13.css" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+   <script>
+      $(document).ready(function() {
+         // set the array
+         var array = ["A", "B", "C", "D", "1", "2", "3", "4", "A", "B", "C", "D", "1", "2", "3", "4"];
+         var numTries = 0;
+         var firstClick = false;
+         var secondClick = false;
+         var matchCount = 0;
+         var firstCard;
+         var secondCard;
+         // function to shuffle the 1D array
+         function shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+               const j = Math.floor(Math.random() * (i + 1));
+               [array[i], array[j]] = [array[j], array[i]];
+            }
+         }
+         shuffle(array);
+
+         // function to make the 1D array into 2D
+         function reshapeArray(array, shape) {
+            var randArray = []
+            for (var i = 0; i < array.length; i += shape) {
+               randArray.push(array.slice(i, i + shape));
+            }
+            return randArray;
+         }
+         randArray = reshapeArray(array, 4);
+         //alert(randArray);
+
+         // set the text of each button
+         for (var i = 0; i < randArray.length; i++) {
+            for (var j = 0; j < randArray[i].length; j++) {
+               $("#" + i.toString() + j.toString() + " span").html(randArray[i][j]);
+               $("#" + i.toString() + j.toString() + " span").hide();
+            }
+         }
+
+         // set the click event 
+         $('.slot').click(function(event) {
+            // set the first card to target if no card is clicked and show it
+            if (!firstClick && !secondClick) {
+               firstCard = $(event.target);
+               firstClick = true;
+               firstCard.prop('disabled', true);
+               $(this).children().show();
+               // if the card is not disabled then make it disappear after 3 seconds
+               setTimeout(function(){
+                  if (!firstCard.children().hasClass("disabled")) {
+                     firstCard.children().fadeOut(1000);
+                     firstCard.prop('disabled', false);
+                     firstClick = false;
+                     numTries++;
+                     //$("#tries").html("Tries: " + numTries);
+                  }
+               },3000)
+            }
+            // if clicked on second card set the target to second and show html span
+            else if (firstClick && !secondClick) {
+               secondCard = $(event.target);
+               secondClick = true;
+               secondCard.prop('disabled', true);
+               $(this).children().show();
+               // when both card is shown check to see if it matches
+               if (firstClick && secondClick) {
+                  // if card matches, disable it and increase the count
+                  if (firstCard.children().html() == secondCard.children().html()) {
+                     numTries++;
+                     //$("#tries").html("Tries: " + numTries);
+                     firstCard.children().addClass("disabled");
+                     secondCard.children().addClass("disabled");
+                     firstCard.css("background-color", "#6E2C00");
+                     firstCard.css("color","white");
+                     secondCard.css("background-color", "#6E2C00");
+                     secondCard.css("color", "white");
+                     matchCount ++;
+                     firstClick = false;
+                     secondClick = false;
+                     if (matchCount == 8) {
+                        alert("Number of Tries Used: " + numTries);
+                     }
+                  }
+                  // if card does not match then make it disappear after 3 seconds
+                  else {
+                     firstCard.children().delay(2000).fadeOut(1000, function(){
+                        firstClick = false;
+                        firstCard.prop('disabled', false);
+                     });
+                     secondCard.children().delay(2000).fadeOut(1000, function() {
+                        secondClick = false;
+                        secondCard.prop('disabled', false);
+                     });
+                  }
+               }
+            }
+         })
+      })
+   </script>
+</head>
+
+<body>
+   <h1>Memory Game</h1>
+   <!-- <h2 id="tries">Tries: 0</h2> -->
+   <div>
+      <table id = "board">
+         <tr>
+            <th><button id = "00" class = "slot"><span></span></button></th>
+            <th><button id = "01" class = "slot"><span></span></button></th>
+            <th><button id = "02" class = "slot"><span></span></button></th>
+            <th><button id = "03" class = "slot"><span></span></button></th>
+         </tr>
+         <tr>
+            <th><button id = "10" class = "slot"><span></span></button></th>
+            <th><button id = "11" class = "slot"><span></span></button></th>
+            <th><button id = "12" class = "slot"><span></span></button></th>
+            <th><button id = "13" class = "slot"><span></span></button></th>
+         </tr>
+         <tr>
+            <th><button id = "20" class = "slot"><span></span></button></th>
+            <th><button id = "21" class = "slot"><span></span></button></th>
+            <th><button id = "22" class = "slot"><span></span></button></th>
+            <th><button id = "23" class = "slot"><span></span></button></th>
+         </tr>
+         <tr>
+            <th><button id = "30" class = "slot"><span></span></button></th>
+            <th><button id = "31" class = "slot"><span></span></button></th>
+            <th><button id = "32" class = "slot"><span></span></button></th>
+            <th><button id = "33" class = "slot"><span></span></button></th>
+         </tr>
+      </table>
+   </div>
+</body>
+</html>

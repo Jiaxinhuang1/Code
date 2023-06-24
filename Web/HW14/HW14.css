@@ -1,0 +1,124 @@
+body {
+	font-family: Noticia Text, serif;
+}
+
+#container {
+	width: 90%;
+	margin: 10px auto;
+	background-color: #fff;
+	color: #333;
+	border: 3px solid darkgray;
+	line-height: 130%;
+}
+
+#top {
+	padding: 0.5em;
+	background-color: #ddd;
+	border-bottom: 2px solid darkgray;
+	text-align: center;
+}
+
+#top h1 {
+	font-weight: 900;
+	font-size: 80px;
+	padding: 0;
+	margin: 20px;
+	text-transform: uppercase;
+    display: inline-block;
+    line-height: 72px;
+    margin-bottom: 20px;
+}
+
+#top h3 {
+	border-top: 1px solid darkgray;
+	border-bottom: 1px solid darkgray;
+	margin: 5px;
+	padding: 5px;
+	background-color: whitesmoke;
+}
+
+.headlines h1, .news h1 {
+	font-family: Noticia Text, sans-serif;
+	margin: 50px;
+	font-size: 36pt;
+	font-variant: small-caps;
+	padding-bottom: 30px;
+	border-bottom: 2px solid darkgray;
+	line-height: 100%;
+}
+
+.headlines a {
+	text-decoration: none;
+	color: black;
+}
+
+.headlines a:hover {
+	color: darkgray;
+}
+
+.news {
+	border: 3px solid darkgray;
+	font-family: Noticia Text, sans-serif;
+	font-size: 14pt;
+	line-height: 200%;
+	margin: 50px;
+}
+
+.news h1 {
+	padding: 0.5em;
+	background-color: #ddd;
+}
+
+.news h3 {
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+}
+
+.news a {
+	text-decoration: none;
+	border: 2pt solid darkgray;
+	color: black;
+	background-color: lightgray;
+	padding: 10px;
+	margin-left: 50px;
+	margin-right: 50px;
+	position: relative;
+	top: -20px;
+}
+
+.news a:hover {
+	background-color: lightcoral;
+}
+
+#login {
+	background-color: #fff;
+	border: 2px solid black;
+	width: 50%;
+	padding: 30px;
+	font-size: 15pt;
+	float: center;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 100px;
+}
+
+#login table {
+	border-collapse:separate; 
+    border-spacing: 20px;
+}
+
+.button {
+	position: relative;
+	left: 40%;
+	width: 80px;
+	height: 30px;
+}
+
+#formbg {
+	background-color: lightgray;
+}
