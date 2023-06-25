@@ -1,0 +1,94 @@
+body {
+	background-color: #2874A6
+}
+
+h1 {
+	font-weight: bold;
+	text-align: center;
+	margin: auto;
+	font-size: 40pt;
+	font-variant: small-caps;
+	margin: 5px;
+	background-color: #AED6F1;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+#board {
+	margin: auto;
+	padding: 10px;
+	width: 50%;
+	height: 50%;
+	border: 3px solid black;
+	background-color: #D4E6F1;
+}
+
+#board tr {
+	margin: 10px;
+	padding: 20px;
+}
+
+#board th {
+	margin: 15px;
+	width: 150px;
+	height: 150px;
+}
+
+.slot {
+	width: 100%;
+	height: 100%;
+	font-size: 50pt;
+	font-variant: small-caps;
+	font-weight: bold;
+	background-color: #AED6F1;
+}
+
+.slot:hover {
+	background-color: #D6EAF8;
+}
+
+.slot:active {
+	background-color: #1B4F72;
+}
+
+.slot:disabled {
+	background-color: #1B4F72;
+	color: white;
+}
+
+#score {
+	background-color: #D4E6F1;
+	margin-top: 10px;
+	padding: 10px;
+	width: 30%;
+	border: 2px solid black;
+	font-size: 18pt;
+}
+
+#score th {
+	width: 50%;
+}
+
+#bottom {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ReplayBtn {
+	width: 200px;
+	height: 100px;
+	margin-left: 10px;
+	font-size: 18pt;
+	font-weight: bold;
+	border: 2px solid black;
+	background-color: #85C1E9;
+}
+
+.ReplayBtn:hover {
+	background-color: #D6EAF8;
+}
+
+.ReplayBtn:active {
+	background-color: #1B4F72;
+}

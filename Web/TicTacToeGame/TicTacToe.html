@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+   <title>Exam2 Tic-Tac-Toe</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="Memory Game Using JQuery">
+   <meta name="author" content="Jiaxin Huang">
+   <link href="TicTacToe.css" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script type = "text/javascript" src = "TicTacToe.js"> </script>
+</head>
+
+<body>
+   <h1>Tic-Tac-Toe</h1>
+   <div>
+      <table id = "board">
+         <tr>
+            <th id = "11"><button class = "slot" onclick="Display(this)"></button></th>
+            <th id = "12"><button class = "slot" onclick="Display(this)"></button></th>
+            <th id = "13"><button class = "slot" onclick="Display(this)"></button></th>
+         </tr>
+         <tr>
+            <th id = "21"><button class = "slot" onclick="Display(this)"></button></th>
+            <th id = "22"><button class = "slot" onclick="Display(this)"></button></th>
+            <th id = "23"><button class = "slot" onclick="Display(this)"></button></th>
+         </tr>
+         <tr>
+            <th id = "31"><button class = "slot" onclick="Display(this)"></button></th>
+            <th id = "32"><button class = "slot" onclick="Display(this)"></button></th>
+            <th id = "33"><button class = "slot" onclick="Display(this)"></button></th>
+         </tr>
+      </table>
+   </div>
+   <div id = "bottom">
+      <table id = "score">
+         <tr>
+            <th colspan="2" style="background-color: #A6ACAF">SCOREBOARD</th>
+         </tr>
+         <tr>
+            <th>Player X</th>
+            <th id="XScore">0</th>
+         </tr>
+         <tr>
+            <th>Player O</th>
+            <th id="OScore">0</th>
+         </tr>
+      </table>
+      <button class = "ReplayBtn" onclick="NewGame()">REPLAY</button>
+   </div>
+</body>
+</html>
